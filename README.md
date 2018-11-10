@@ -6,6 +6,13 @@ containers with applications written in Rust
 Rust's Hello World (with `--release` option) packs into an image with
 a size of 5.75MB
 
+## Quick start
+
+```
+docker build -f Dockerfile -t rust_helloworld:latest .
+docker run rust_helloworld
+```
+
 ## Dockerfile
 
 Multistage build is used to achieve minimal docker image size. Built
@@ -17,6 +24,6 @@ MIT or Apache 2.0, at your choice.
 
 ## Author
 
-Sergey Mishin <sergey.a.mishin@gmail.com>
+Sergey Mishin <sergei.a.mishin@gmail.com>
 
 
